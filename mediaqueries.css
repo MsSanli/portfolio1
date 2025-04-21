@@ -10,6 +10,13 @@
   #projects {
     height: fit-content;
   }
+  #projects .about-containers {
+    flex-direction: column;
+    align-items: center;
+  }
+  #projects .flip-card {
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
