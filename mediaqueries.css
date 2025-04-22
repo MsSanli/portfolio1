@@ -107,4 +107,57 @@
   .text-container {
     text-align: justify;
   }
+  
+ 
+  #projects {
+    padding-bottom: 3rem;
+  }
+  
+  #projects .about-containers {
+    gap: 4rem; 
+  }
+  
+  .flip-card {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    min-height: 450px;
+    margin-bottom: 3rem; 
+  }
+  
+  .flip-card-front, .flip-card-back {
+    height: 100%;
+  }
+  
+  section {
+    height: auto !important; 
+    min-height: auto;
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flip-card {
+    height: 450px;
+    max-width: 320px;
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  
+  .flip-card-inner, 
+  .flip-card-front, 
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .flip-card-back {
+    padding: 1rem;
+  }
+  
+  .flip-card-back p {
+    font-size: 0.9rem;
+    margin: 1rem 0;
+  }
 }
