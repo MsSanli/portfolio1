@@ -17,6 +17,7 @@
   #projects .flip-card {
     margin-bottom: 2rem;
   }
+  
 }
 
 @media screen and (max-width: 1200px) {
@@ -159,5 +160,12 @@
   .flip-card-back p {
     font-size: 0.9rem;
     margin: 1rem 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-btn {
+    font-size: 0.8rem;  /* Even smaller text on mobile */
+    padding: 0.6rem 0.8rem;  /* Smaller padding on mobile */
   }
 }
