@@ -77,7 +77,23 @@
   .about-containers {
     margin-top: 0;
   }
+
+  #about .about-containers,
+  #experience .about-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  #about .details-container,
+  #experience .details-container {
+    width: 100%;
+    max-width: 500px;
+  }
 }
+
+
 
 /* Small desktop adjustments */
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -175,7 +191,7 @@
     text-align: justify;
   }
   
-  /* Profile picture specific fix for mobile */
+  /* Profile picture fix for mobile */
   #profile .section__pic-container {
     width: 250px;
     height: 250px;
@@ -245,6 +261,20 @@
     font-size: 0.8rem;
     padding: 0.6rem 0.8rem;
   }
+
+  #about .about-containers,
+  #experience .about-containers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  #about .details-container,
+  #experience .details-container {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 /* Very small mobile screens */
@@ -264,5 +294,80 @@
   
   #projects .about-containers {
     gap: 7rem;
+  }
+}
+
+/* CENTER all cards and pics when minimizing screen */
+@media screen and (max-width: 1200px) {
+  /* Fix for all sections to properly center content */
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Ensure container elements are full width but centered content */
+  .about-details-container,
+  .experience-details-container,
+  .section-container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Specific fixes for about and experience sections */
+  #about .about-containers,
+  #experience .about-containers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  /* Set proper width constraints for cards */
+  .details-container {
+    width: 100%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+  }
+  
+  /* Fix for project cards */
+  #projects .about-containers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+/* More specific mobile fixes */
+@media screen and (max-width: 600px) {
+  section {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    box-sizing: border-box;
+  }
+  
+  /* Mobile card width adjustments */
+  .details-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  /* Force center alignment of section pics */
+  .section__pic-container {
+    margin: 0 auto 2rem;
+    display: flex;
+    justify-content: center;
   }
 }
